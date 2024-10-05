@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieve Image</title>
+</head>
+<body>
+    <h2>Retrieve Your Image</h2>
+    <form id="retrieveImageForm" method="POST" action="/retrieve" target="imageFrame">
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Retrieve Image">
+    </form>
+
+    <h3>Your Image:</h3>
+    <iframe id="imageFrame" name="imageFrame" style="width: 1000px; height: 1000px;"></iframe>
+</body>
+</html>
